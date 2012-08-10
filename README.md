@@ -5,6 +5,8 @@ A Clojure library designed to tween a value between two points.
 Inbetweening or tweening is the process of generating intermediate
 points between two points.
 
+[![Build Status](https://secure.travis-ci.org/gstamp/tween-clj.png?branch=master)](http://travis-ci.org/gstamp/tween-clj)
+
 ## Usage
 
 The tweening interface defines two main concepts.  Transition
