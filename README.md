@@ -12,7 +12,7 @@ points between two points.
 Simply add this to your leiningen deps: [tween-clj "0.4.0"]
 
 The tweening interface defines two main concepts.  Transition
-functions and easy functions.
+functions and easing functions.
 
 The transition function defines how a value transitions between two
 states. There are several transition functions to choose from.
