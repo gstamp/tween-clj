@@ -9,6 +9,8 @@ points between two points.
 
 ## Usage
 
+Simply add this to your leiningen deps: [tween-clj "0.4.0"]
+
 The tweening interface defines two main concepts.  Transition
 functions and easy functions.
 

@@ -1,4 +1,4 @@
-(defproject tween-clj "0.1.0-SNAPSHOT"
+(defproject tween-clj "0.1.0"
   :description "Tweening library for clojure"
   :url "https://github.com/gstamp/tween-clj"
   :license {:name "Eclipse Public License"
