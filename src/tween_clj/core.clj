@@ -117,6 +117,14 @@
 ;;; Extra functions
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(defn constrain
+  "Constrains a value to not exceed a maximum and minimum value."
+  [amt low high]
+  (if (< amt low) low
+      (if (> amt high)
+        high
+        amt)))
+
 (defn range-to-p
   "Converts the current position in a range into a p value for use in the transition functions.
 
@@ -124,7 +132,20 @@
   'end' is the ending value of the range
   'current' is the current value between 'start' and 'end'"
   [start end current]
-  (/ (- current start) end))
+  (constrain 
+   (/ (- current start) (- end start))
+   0
+   1))
 
+(defn p-to-range
+  "Converts a p value (between 0 & 1) back into a range between start and end.
 
-
+  'start' is the starting value of the range
+  'end' is the ending value of the range
+  'p' is a value between 0 & 1."
+  [start end p]
+  (constrain
+   (+ start
+      (* p (- end start)))
+   start
+   end))

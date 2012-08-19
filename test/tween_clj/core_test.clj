@@ -141,6 +141,7 @@
 (deftest test-range-to-p
   
   (is (= (range-to-p 0 10 3) 3/10))
+  (is (= (range-to-p 100 110 109) 9/10))
 
   )
 
