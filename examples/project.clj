@@ -1,4 +1,4 @@
-(defproject tween-clj-examples "0.3.0"
+(defproject tween-clj-examples "0.4.0-SNAPSHOT"
   :description "Examples for the tween-clj project"
   :url "http://githib.com/gstamp/tween-clj"
   :main tween-clj-examples.core
