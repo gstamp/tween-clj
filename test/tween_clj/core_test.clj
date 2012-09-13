@@ -4,17 +4,17 @@
 
 (defn almost= 
   "checks if two numbers are almost the same (to allow for fix point number wierdness)"
-  [val1 val2]
-  (< (Math/abs (- val1 val2)) 0.00000001))
+  [^double val1 ^double val2]
+  (< (Math/abs (- val1 val2)) (double 0.00000001)))
 
 (deftest linear-tween
   (testing "linear tween just returns back same value even if eased-in"
     (are [p p'] (almost= (ease-in transition-linear p) p')
-         0    0
-         0.1  0.1
-         0.5  0.5
-         0.9  0.9
-         1    1
+         (double 0)    (double 0)
+         (double 0.1)  (double 0.1)
+         (double 0.5)  (double 0.5)
+         (double 0.9)  (double 0.9)
+         (double 1)    (double 1)
          ))
 
   (testing "linear tween just returns back same value even if eased-out"
@@ -140,8 +140,8 @@
 
 (deftest test-range-to-p
   
-  (is (= (range-to-p 0 10 3) 3/10))
-  (is (= (range-to-p 100 110 109) 9/10))
+  (is (= (range-to-p 0 10 3) 0.3))
+  (is (= (range-to-p 100 110 109) 0.9))
 
   )
 
