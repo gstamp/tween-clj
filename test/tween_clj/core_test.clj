@@ -69,12 +69,12 @@
 (deftest elastic-tween
   (testing "elastic transition"
     (are [p p'] (almost= (ease-in transition-elastic p) p')
-         0    9.765625E-4
-         0.1  -9.765624999999996E-4
-         0.2  -0.0019531250000000017
-         0.5  -0.01562500000000004
-         0.9  0.5000000000000001
-         1    -0.4999999999999972)))
+         0    -4.882812500000003E-4
+         0.1  0.001953125
+         0.2  -0.001953125000000006
+         0.5  -0.015624999999999995
+         0.9  -0.24999999999999978
+         1    1.0)))
 
 (deftest exponential-tween
   (testing "exponential transition"

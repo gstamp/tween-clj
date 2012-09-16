@@ -83,13 +83,11 @@
   'x' controls the elasticity
   'pos' is a number between 0 and 1 representing the position of the transition between
   starting (0) and finished (1)"
-  (^double [^double pos] (transition-elastic 1 pos))
-  (^double [^double x ^double pos] (*
-            (Math/pow (double 2) (* (double 10) (dec pos)))
-            (Math/cos (* (double 20)
-                         pos
-                         Math/PI
-                         (/ x (double 3)))))))
+  (^double [^double pos] (transition-elastic (double 1) pos))
+  (^double [^double x ^double pos]
+           (* (Math/pow (double 2) (* (double 10) (dec pos)))
+              (Math/cos (/ (* (double 20) (dec pos) Math/PI x)
+                           (double 3))))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
