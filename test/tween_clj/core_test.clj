@@ -106,6 +106,10 @@
          0.5  0.234375
          0.9  0.9243750000000001
          1    1.0
+         ))
+  (testing "loop exits when given invalid input"
+    (are [p p'] (almost= (ease-out transition-bounce p) p')
+         2    30.25
          )))
 
 (deftest pow-tween

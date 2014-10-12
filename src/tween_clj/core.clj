@@ -1,7 +1,5 @@
 (ns tween-clj.core)
 
-(set! *warn-on-reflection* true)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Transition types
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -71,7 +69,8 @@
   ^double
   [^double pos]
   (loop [a (double 0) b (double 1)]
-    (if (>= pos (/ (- 7 (* 4 a)) 11))
+    (if (or (>= pos (/ (- 7 (* 4 a)) 11))
+            (not (<= 0 pos 1.0 )))
       (- (* b b)
          (Math/pow (/ (- 11 (* 6 a) (* 11 pos)) 4)
                    2))
