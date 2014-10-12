@@ -9,7 +9,7 @@ points between two points.
 
 ## Usage
 
-Simply add this to your leiningen deps: [tween-clj "0.4.0"]
+Simply add this to your leiningen deps: [tween-clj "0.5.0"]
 
 The tweening interface defines two main concepts.  Transition
 functions and easing functions.
@@ -41,6 +41,6 @@ Available transition types:
 
 ## License
 
-Copyright © 2012 Glen Stampoultzis
+Copyright © 2012-14 Glen Stampoultzis
 
 Distributed under the Eclipse Public License, the same as Clojure.
