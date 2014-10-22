@@ -10,6 +10,7 @@ points between two points.
 ## Usage
 
 Simply add tween-clj to your leiningen deps: 
+
 [![Clojars Project](http://clojars.org/tween-clj/tween-clj/latest-version.svg)](http://clojars.org/tween-clj)
 
 The tweening interface defines two main concepts.  Transition
