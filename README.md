@@ -41,6 +41,8 @@ Available transition types:
 - transition-bounce
 - transition-elastic
 
+To a GUI of these transitions in action see the [example directory](https://github.com/gstamp/tween-clj/tree/master/examples).
+
 ## License
 
 Copyright © 2012-14 Glen Stampoultzis
