@@ -1,4 +1,5 @@
-(ns tween-clj.core)
+(ns tween-clj.core
+  #?(:cljs (:require [tween-clj.math-interop :as Math])))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Transition types
