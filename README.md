@@ -45,6 +45,4 @@ To see a GUI of these transitions in action see the [example directory](https://
 
 ## License
 
-Copyright © 2012-14 Glen Stampoultzis
-
 Distributed under the Eclipse Public License, the same as Clojure.
